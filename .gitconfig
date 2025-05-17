@@ -1,0 +1,25 @@
+[user]
+	email = 40899982+Javernus@users.noreply.github.com
+	name = Jake Jongejans
+[credential]
+	helper = store
+[core]
+	excludesfile = /Users/jakejongejans/.gitignore_global
+	editor = nvim
+[commit]
+	template = /Users/jakejongejans/.stCommitMsg
+[tag]
+	forceSignAnnotated = true
+[safe]
+	directory = /Users/jakejongejans/.cache/iosevka
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
