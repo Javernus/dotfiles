@@ -4,9 +4,6 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Oh my Z.sh config
-export ZSH="$HOME/.oh-my-zsh"
-
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 10
 
@@ -14,6 +11,8 @@ plugins=(
 	git
 )
 
+# Oh my Z.sh config
+export ZSH="$HOME/.config/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
